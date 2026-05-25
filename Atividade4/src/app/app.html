@@ -1,0 +1,70 @@
+﻿<header class="topbar">
+  <div class="topbar-content">
+    <div>
+      <h1>Atividade 4 - Front-End de Alunos</h1>
+      <p>Consome a API da Atividade 3 para listar, consultar e atualizar alunos.</p>
+    </div>
+    <nav>
+      <a routerLink="/alunos">Lista de alunos</a>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <router-outlet></router-outlet>
+</main>
+<style>
+  :host {
+    display: block;
+    font-family: Inter, system-ui, sans-serif;
+    min-height: 100vh;
+    background: #f8fafc;
+    color: #0f172a;
+  }
+
+  .topbar {
+    background: #2563eb;
+    color: white;
+    padding: 1.2rem 1rem;
+  }
+
+  .topbar-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    line-height: 1.1;
+  }
+
+  p {
+    margin: 0.5rem 0 0;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    transition: background 0.2s ease;
+  }
+
+  nav a:hover {
+    background: rgba(255,255,255,0.15);
+  }
+
+  .main {
+    max-width: 1180px;
+    margin: 2rem auto;
+    padding: 0 1rem 2rem;
+  }
+</style>
